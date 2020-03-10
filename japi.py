@@ -19,6 +19,6 @@ def main():
             apiOutput = getStockData(userinput)
             output = json.loads(apiOutput)
             print("The current price of " + output['Global Quote']['01. symbol'] + " is " + output['Global Quote']['05. price'])
-    print("Exiting program")
+    print("Stock Quotes retrieved successfully!")
 
 main()
